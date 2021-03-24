@@ -50,3 +50,26 @@ Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: [-]poststarthook/sch
 Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.406129    6>
 lines 1-20/20 (END)
 
+
+logs
+
+[root@localhost CSK-Notes]# journalctl -u etcd
+-- Logs begin at Wed 2021-03-24 09:18:59 IST, end at Wed 2021-03-24 11:48:18 IST. --
+Mar 24 11:07:55 localhost.localdomain systemd[1]: Started etcd.
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: [WARNING] Deprecated '--logger=capns>
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: etcd Version: 3.4.10
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: [WARNING] Deprecated '--logger=capns>
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: Git SHA: 18dfb9cca
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: Go Version: go1.12.17
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: Go OS/Arch: linux/amd64
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: setting maximum number of CPUs to 2,>
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: the server is already initialized as>
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: name = default
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: data dir = /var/lib/etcd
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: member dir = /var/lib/etcd/member
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: heartbeat = 100ms
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: election = 1000ms
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: snapshot count = 100000
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: advertise client URLs = https://127.>
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: initial advertise peer URLs = http:/>
+
