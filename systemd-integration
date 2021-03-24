@@ -26,7 +26,7 @@ Mar 24 11:07:57 localhost.localdomain etcd[4542]: ready to serve client requests
 Mar 24 11:07:57 localhost.localdomain etcd[4542]: published {Name:default ClientURLs:[>
 Mar 24 11:07:57 localhost.localdomain etcd[4542]: serving client requests on 127.0.0.1>
 
-
+#check kube-apiserver ip address if any error comes in /etc/systemd/system/kube-apiserver.service
 [root@localhost ~]# systemctl status kube-apiserver
 ● kube-apiserver.service - Kubernetes API Server
    Loaded: loaded (/etc/systemd/system/kube-apiserver.service; disabled; vendor preset>
