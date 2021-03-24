@@ -1,0 +1,27 @@
+[root@localhost ~]# systemctl status etcd
+● etcd.service - etcd
+   Loaded: loaded (/etc/systemd/system/etcd.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: https://github.com/coreos
+[root@localhost ~]# systemctl start etcd
+[root@localhost ~]# systemctl status etcd
+● etcd.service - etcd
+   Loaded: loaded (/etc/systemd/system/etcd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Wed 2021-03-24 11:07:55 IST; 3s ago
+     Docs: https://github.com/coreos
+ Main PID: 4542 (etcd)
+    Tasks: 10 (limit: 11271)
+   Memory: 31.0M
+   CGroup: /system.slice/etcd.service
+           └─4542 /usr/local/bin/etcd --cert-file=/root/certificates/etcd.crt --key-fi>
+
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: listening for peers on 127.0.0.1:2380
+Mar 24 11:07:55 localhost.localdomain etcd[4542]: failed to apply request "header:<ID:>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: 8e9e05>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: 8e9e05>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: 8e9e05>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: 8e9e05>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: raft.n>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: ready to serve client requests
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: published {Name:default ClientURLs:[>
+Mar 24 11:07:57 localhost.localdomain etcd[4542]: serving client requests on 127.0.0.1>
