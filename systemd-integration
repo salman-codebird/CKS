@@ -25,3 +25,28 @@ Mar 24 11:07:57 localhost.localdomain etcd[4542]: raft2021/03/24 11:07:57 INFO: 
 Mar 24 11:07:57 localhost.localdomain etcd[4542]: ready to serve client requests
 Mar 24 11:07:57 localhost.localdomain etcd[4542]: published {Name:default ClientURLs:[>
 Mar 24 11:07:57 localhost.localdomain etcd[4542]: serving client requests on 127.0.0.1>
+
+
+[root@localhost ~]# systemctl status kube-apiserver
+● kube-apiserver.service - Kubernetes API Server
+   Loaded: loaded (/etc/systemd/system/kube-apiserver.service; disabled; vendor preset>
+   Active: active (running) since Wed 2021-03-24 11:42:18 IST; 7s ago
+     Docs: https://github.com/kubernetes/kubernetes
+ Main PID: 6581 (kube-apiserver)
+    Tasks: 8 (limit: 11271)
+   Memory: 276.2M
+   CGroup: /system.slice/kube-apiserver.service
+           └─6581 /usr/local/bin/kube-apiserver --advertise-address=192.168.2.18 --etc>
+
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: [-]poststarthook/schedulin>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.198954    6>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: [-]poststarthook/schedulin>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.298985    6>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: [-]poststarthook/schedulin>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.345938    6>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.345977    6>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.402888    6>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: [-]poststarthook/schedulin>
+Mar 24 11:42:22 localhost.localdomain kube-apiserver[6581]: I0324 11:42:22.406129    6>
+lines 1-20/20 (END)
+
